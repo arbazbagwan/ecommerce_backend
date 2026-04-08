@@ -1,5 +1,7 @@
 exports.getAllUsers = (req, res) =>{
     const users = [{ id: 1, name: 'Alice' }]; 
+    console.log(req.user)
+
     res.status(200).json(users);
 }
 
